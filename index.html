@@ -584,7 +584,7 @@ async function submit(){
   btn.disabled = true;
   const lbl = btn.querySelector('span') || btn; lbl.textContent = '전송 중...';
 
-  const fd = new FormData();
+  const fd = new URLSearchParams();
   fd.append('name', data.name);
   fd.append('phone', data.phone);
   fd.append('purpose', data.purpose);
